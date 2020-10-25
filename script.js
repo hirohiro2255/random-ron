@@ -9,7 +9,6 @@ quoteButton.addEventListener('click', (e) => {
     }
     return Promise.reject(res);
   }).then(data => {
-    console.log(data);
     quote.innerText = data[0];
   }).catch(err => {
     quote.innerText = 'Unable to fetch some quotes.';
@@ -23,7 +22,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
     }
     return Promise.reject(res);
   }).then(data => {
-    console.log(data);
     quote.innerText = data[0];
   }).catch(err => {
     quote.innerText = 'Unable to fetch some quotes.';
